@@ -1,0 +1,93 @@
+<!--<div class='container'>-->
+<!--  <div class='row'>-->
+<!--    <div class='col-md-10 offset-md-1 col-lg-8 offset-lg-2'>-->
+<!--      <h1>ユーザー登録</h1>-->
+      <%#= form_with model: @user, local: true do |f| %>
+<!--        <div class='form-group'>-->
+          <%#= f.label :kanji, '氏名' %>
+          <%#= f.text_field :kanji, class: 'form-control' %>
+<!--        </div>-->
+<!--        <div class='form-group'>-->
+          <%#= f.label :hurigana, 'ふりがな' %>
+          <%#= f.text_field :hurigana, class: 'form-control' %>
+<!--        </div>-->
+<!--        <div class='form-group'>-->
+          <%#= f.label :email, 'メールアドレス' %>
+          <%#= f.text_field :email, class: 'form-control' %>
+<!--        </div>-->
+<!--        <div class='form-group'>-->
+          <%#= f.label :phone_number, '電話番号' %>
+          <%#= f.text_field :phone_number, class: 'form-control' %>
+<!--        </div>-->
+<!--        <div class='form-group'>-->
+          <%#= f.label :address, '住所' %>
+          <%#= f.text_field :address, class: 'form-control' %>
+<!--        </div>-->
+
+<!--          <div class="form-group">-->
+            <%#= f.label :certification, '保有資格' %>
+<!--            <div class="form-inline">-->
+<!--              <label for="r_male">実務者研修<input id="r_male" type="radio" name="gender" value="実務者研修" required></label>-->
+<!--              <label for="r_male">介護福祉士<input id="r_male" type="radio" name="gender" value="介護福祉士" required></label>-->
+<!--              <label for="r_male">レクリエーション介護士<input id="r_male" type="radio" name="gender" value="レクリエーション介護士" required></label>-->
+<!--              <label for="r_male">正看護師<input id="r_male" type="radio" name="gender" value="正看護師" required></label>-->
+<!--              <label for="r_male">准看護師<input id="r_male" type="radio" name="gender" value="准看護師" required></label>-->
+<!--              <label for="r_male">無資格<input id="r_male" type="radio" name="gender" value="無資格" required></label>-->
+
+
+              <%#= f.label :other_certification, '※その他の資格をお持ちの方はこちらに記載ください' %>
+<!--              <input type="text" class="form-control">-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--        <div class='form-group'>-->
+          <%#= f.label :password, 'パスワード' %>
+          <%#= f.text_field :password, class: 'form-control' %>
+<!--        </div>-->
+<!--        <div class='form-group'>-->
+          <%#= f.label :password_confirmation, 'パスワード確認' %>
+          <%#= f.text_field :password_confirmation, class: 'form-control' %>
+<!--        </div>-->
+        <%#= f.submit '登録', class: 'btn btn-primary' %>
+      <%# end %>
+<!--      <div class='text-center'>-->
+        <%#= link_to 'ログインページへ', 'login' %>
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+
+<% content_for(:title, t('.register_user')) %>
+<div class='container'>
+  <div class='row'>
+    <div class='col-md-10 offset-md-1 col-lg-8 offset-lg-2'>
+      <h1><%= t('.title') %></h1>
+      <%= form_with model: @user, local: true do |f| %>
+        <div class='form-group'>
+          <%= f.label :last_name %>
+          <%= f.text_field :last_name, class: 'form-control' %>
+        </div>
+        <div class='form-group'>
+          <%= f.label :first_name %>
+          <%= f.text_field :first_name, class: 'form-control' %>
+        </div>
+        <div class='form-group'>
+          <%= f.label :email %>
+          <%= f.text_field :email, class: 'form-control' %>
+        </div>
+        <div class='form-group'>
+          <%= f.label :password %>
+          <%= f.text_field :password, class: 'form-control' %>
+        </div>
+        <div class='form-group'>
+          <%= f.label :password_confirmation %>
+          <%= f.text_field :password_confirmation, class: 'form-control' %>
+        </div>
+        <%= f.submit t('.submit'), class: 'btn btn-primary' %>
+      <% end %>
+      <div class='text-center'>
+        <%= link_to t('.login_page'), 'login' %>
+      </div>
+    </div>
+  </div>
+</div>

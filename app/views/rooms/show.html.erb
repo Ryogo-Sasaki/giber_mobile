@@ -1,0 +1,64 @@
+<h1>メッセージ</h1>
+
+<div id="messages">
+  <%= render @messages %>
+</div>
+
+
+<!--<div class="kaiwa">-->
+<!--  <figure class="kaiwa-img-left">-->
+<!--    <img src="画像のURL" alt="no-img2″>-->
+<!-- <figcaption class="kaiwa-img-description">-->
+<!--    </figcaption>-->
+<!--  </figure>-->
+<!--  <div class="kaiwa-text-right">-->
+<!--    <p class="kaiwa-text">-->
+<!--    <div id="messages">-->
+      <%#= render @messages %>
+<!--    </div>-->
+<!--    </p>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="chat-box">
+  <div class="chat-face">
+    <img src="[自分の画像URL]" alt="自分のチャット画像です。" width="90" height="90">
+  </div>
+  <div class="chat-area">
+    <div class="chat-hukidashi">
+      <div id="messages">
+        <%= render @messages %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--　<!–左からの吹き出し–>-->
+<!--<div class="kaiwa">-->
+<!--  <figure class="kaiwa-img-left">-->
+<!--    <img src="画像のURL" alt="no-img2″>-->
+<!-- <figcaption class="kaiwa-img-description">-->
+<!--    <div id="messages">-->
+      <%#= render @messages %>
+<!--    </div>-->
+<!--    </figcaption>-->
+<!--  </figure>-->
+<!--  <div class="kaiwa-text-right">-->
+<!--    <p class="kaiwa-text">-->
+<!--    <form>-->
+<!--      <input type="text" data-behavior="room_speaker">-->
+<!--    </form>-->
+
+<!--    </p>-->
+<!--  </div>-->
+<!--</div>-->
+
+<div class="card-footer">
+  <form>
+    <label>何か記載してください</label><br>
+    <input type="text" data-behavior="room_speaker"name="message" placeholder="Type Message ..." class="form-control">
+  </form>
+</div>
+

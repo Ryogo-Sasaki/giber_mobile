@@ -1,0 +1,15 @@
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bootsnap-1.4.5/ext/bootsnap
+/Users/sasakiryogo/.rbenv/versions/2.6.4/bin/ruby -I /Users/sasakiryogo/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20191221-5538-l001g1.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bootsnap-1.4.5/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20191221-5538-11x92qw/bootsnap
