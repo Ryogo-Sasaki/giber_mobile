@@ -1,0 +1,40 @@
+<div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+  <div id="product-id">
+    <div class="card">
+      <img class="card-img-top"
+           src="/assets/sample.jpg" width="300"
+           height="200" />
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="/boards"><%= board.title %></a>
+        </h4>
+        <div style='display: inline; float: right;'>
+          <a id="btn-bookmark" data-remote="true" rel="nofollow" data-method="post"
+             href="/bookmarks?board_id">
+            <i class="fa fa-star-o"></i>
+          </a>
+        </div>
+
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <i class="fa fa-user"></i>
+            <%= board.user_id%>
+
+          </li>
+          <%= link_to "/" do %>
+            <i class="fa fa-trash fa-pull-right"></i>
+          <% end %>
+          <%= link_to "/" do %>
+            <i class="fa fa-pencil-alt fa-pull-right"></i>
+          <% end %>
+          <br>
+          <li class="list-inline-item">
+            <i class="fa fa-calendar"></i>
+            <%= l board.created_at, format: :long %>
+          </li>
+        </ul>
+        <p class="card-text"><%= board.body %></p>
+      </div>
+    </div>
+  </div>
+</div>

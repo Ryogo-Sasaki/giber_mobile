@@ -1,0 +1,15 @@
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+/Users/sasakiryogo/.rbenv/versions/2.6.4/bin/ruby -I /Users/sasakiryogo/.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20191221-87621-rpk7gc.rb extconf.rb
+creating Makefile
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" clean
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR="
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/sasakiryogo/giber/giber_develop/giber_mobile/vendor/bundle/gems/bindex-0.8.1/ext/skiptrace
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20191221-87621-1y05o1l/skiptrace/internal
